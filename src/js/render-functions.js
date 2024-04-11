@@ -1,7 +1,7 @@
 import SimpleLightbox from 'simplelightbox';
 import 'simplelightbox/dist/simple-lightbox.min.css';
 
-function renderUsers(arr) {
+export function renderUsers(arr) {
   const markup = img
     .map(img => {
       return;
