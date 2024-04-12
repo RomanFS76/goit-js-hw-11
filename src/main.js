@@ -21,12 +21,21 @@ formEl.addEventListener('submit', event => {
                     timeout: 2000,
                 });
                 return;
-            }
-            ;
+            };
+            // if(data.hits)
+            if (data.hits === '') {
+                ({
+                  message: 'Field must be filled!',
+                  color: 'green', // blue, red, green, yellow
+                  position: 'center', // bottomRight, bottomLeft, topRight, topLeft, topCenter, bottomCenter, center
+                  timeout: 2000,
+                });
+
+             }
+            
             gallaryEl.insertAdjacentHTML('beforeend',renderImages(data.hits));
         })
-        .catch(error => console.log(error));
-        
+        .catch(error => console.log(error));        
         formEl.reset();
 });
 
