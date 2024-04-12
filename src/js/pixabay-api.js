@@ -12,6 +12,7 @@ export function getPhotos(inputValue) {
             position: 'center', // bottomRight, bottomLeft, topRight, topLeft, topCenter, bottomCenter, center
             imageWidth: 100,
         });
+        return;
     };
 
     const API_KEY = '43330031-9673f4a92262d12e3841226eb';

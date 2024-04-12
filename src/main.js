@@ -1,7 +1,7 @@
 import { getPhotos } from './js/pixabay-api.js';
 import { renderImages } from './js/render-functions.js';
 
-const btnSubmit = document.querySelector('[type="submit"]');
+
 const formEl = document.querySelector('.form-search');
 
 
