@@ -2,7 +2,7 @@
 
 body {
   box-sizing: border-box;
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-size: 16px;
   color: #fff;
   padding-top: 36px;
@@ -22,14 +22,14 @@ form {
   margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
+  row-gap: 10px;
+  column-gap: 10px;
 }
 
 .gallery-item {
-width: calc((100% -24px * 2) / 3);
-height: 200px;
-background-color: #4e75ff;
+  width: calc((100% - 10px * 4) / 5);
+  height: 200px;
 }
-
 
 input {
   border: 1px solid #808080;
@@ -37,7 +37,7 @@ input {
   width: 100%;
   padding: 0;
   padding-left: 16px;
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.04em;
@@ -53,7 +53,7 @@ input:focus {
 }
 
 input::placeholder {
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Montserrat', sans-serif;
   letter-spacing: 0.04em;
 }
 
@@ -64,14 +64,14 @@ button {
   background: #4e75ff;
   border: transparent;
 
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.04em;
   color: #fff;
-  }
+}
 
-  button:hover {
-    background: #6c8cff;
-  }
+button:hover {
+  background: #6c8cff;
+}

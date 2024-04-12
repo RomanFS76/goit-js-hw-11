@@ -1,26 +1,30 @@
 import SimpleLightbox from 'simplelightbox';
 import 'simplelightbox/dist/simple-lightbox.min.css';
 
+const lightbox = new SimpleLightbox('.gallery a', {
+  /* options */
+});
+
+lightbox.refresh();
+
 export function renderImages(arr) {
-  const markup = img
-    .map(({webformatURL, largeImageURL ,tags , likes ,views ,comments ,downloads}) => `
+  return arr
+    .map(
+      ({ webformatURL, largeImageURL, tags, likes, views, comments, downloads, }) =>
+      `
         <li class="gallery-item">
           <a class="gallery-link" href="${largeImageURL}">
               <img 
                 class="gallery-image" 
-                src="${preview}"
+                src="${webformatURL}"
                 alt="${tags}" 
               />
           </a>
         </li>
-    `
+      `
     )
     .join('');
   
-  userList.insertAdjacentHTML('beforeend', markup());
 
-  const lightbox =  new SimpleLightbox('.gallery a', {
-    /* options */
-  });
-  lightbox.refresh();
+
 }
