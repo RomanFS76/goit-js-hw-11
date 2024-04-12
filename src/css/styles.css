@@ -14,6 +14,20 @@ form {
   display: flex;
   gap: 8px;
   min-height: 40px;
+  margin-bottom: 32px;
+}
+
+.gallary {
+  width: 1128px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.gallery-item {
+width: calc((100% -24px * 2) / 3);
+height: 200px;
+background-color: #4e75ff;
 }
 
 
