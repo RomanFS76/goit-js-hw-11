@@ -1,7 +1,4 @@
-import SimpleLightbox from 'simplelightbox';
-import 'simplelightbox/dist/simple-lightbox.min.css';
 
-const lightbox = new SimpleLightbox('.gallery a');
 
 export function renderImages(arr) {
   return arr
@@ -50,5 +47,7 @@ export function renderImages(arr) {
       `
     )
     .join('');
+    
 }
-lightbox.refresh();
+
+
