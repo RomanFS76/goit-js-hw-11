@@ -10,7 +10,7 @@ import { renderImages } from './js/render-functions.js';
 const formEl = document.querySelector('.form-search');
 const gallaryEl = document.querySelector('.gallary');
 const loaderEl = document.querySelector('span');
-const lightbox = new SimpleLightbox('.gallery a', {
+const lightbox = new SimpleLightbox('.gallary a', {
   captionsData: 'alt',
   captionDelay: 250,
 });

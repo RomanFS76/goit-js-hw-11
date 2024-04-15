@@ -26,21 +26,20 @@ form {
   column-gap: 10px;
 }
 
-.gallery-item {
+.gallary-item {
   width: calc((100% - 10px * 4) / 5);
   height: 200px;
   display: flex;
   flex-direction: column;
   border: 1px solid black;
   box-sizing: border-box;
-
 }
 
-.gallery-desc-list {
+.gallary-desc-list {
   display: flex;
 }
 
-.gallery-desc-list {
+.gallary-desc-list {
   display: flex;
   justify-content: space-between;
 }
@@ -90,7 +89,6 @@ button:hover {
   background: #6c8cff;
 }
 
-
 p {
   color: #000;
   font-size: 10px;
@@ -98,16 +96,15 @@ p {
 }
 
 a {
-flex-grow: 1;
-
+  flex-grow: 1;
 }
 
 img {
   height: 174px;
-  object-fit: cover ;
+  object-fit: cover;
 }
 
-.gallery-desc-item > p:first-child {
+.gallary-desc-item > p:first-child {
   font-weight: 600;
 }
 
@@ -116,36 +113,39 @@ span {
   width: 110px;
 }
 
+.loader {
+  font-size: 30px;
+  color: black;
+  display: block;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  position: relative;
+  visibility: hidden;
+}
+.loader:after {
+  content: 'Loading';
+  position: relative;
+  z-index: 5;
+}
+.loader:before {
+  content: '';
+  height: 6px;
+  border: 1px solid;
+  border-radius: 10px;
+  width: 100%;
+  position: absolute;
+  bottom: -10px;
+  background: linear-gradient(#ff3d00 100%, transparent 0) no-repeat;
+  background-size: 0% auto;
+  animation: 10s lineGrow linear infinite;
+}
 
-.loader{
-      font-size: 30px;
-      color: black;
-      display: block;
-      font-family: Arial, Helvetica, sans-serif;
-      font-weight: 400;
-      position: relative;
-      visibility: hidden;
-    }
-    .loader:after{
-      content: 'Loading';
-      position: relative;
-      z-index: 5;
-    }
-    .loader:before{
-      content: '';
-      height: 6px;
-      border: 1px solid;
-      border-radius: 10px;
-      width: 100%;
-      position: absolute;
-      bottom: -10px;
-      background: linear-gradient(#FF3D00 100%, transparent 0) no-repeat;
-      background-size: 0% auto;
-      animation: 10s lineGrow linear infinite;
-    }
+@keyframes lineGrow {
+  to {
+    background-size: 100% auto;
+  }
+}
 
-    @keyframes lineGrow {to {  background-size: 100% auto}}
-
-    .is-visible {
-      visibility: visible;
-    }
+.is-visible {
+  visibility: visible;
+}

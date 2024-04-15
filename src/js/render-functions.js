@@ -1,5 +1,3 @@
-
-
 export function renderImages(arr) {
   return arr
     .map(
@@ -13,31 +11,31 @@ export function renderImages(arr) {
         downloads,
       }) =>
         `
-        <li class="gallery-item">
-          <a class="gallery-link" href="${largeImageURL}">
+        <li class="gallary-item">
+          <a class="gallary-link" href="${largeImageURL}">
               <img 
-                class="gallery-image" 
+                class="gallary-image" 
                 src="${webformatURL}"
                 alt="${tags}"
                 width = "1000"
                 height = "800"
               />
           </a>
-          <div class="gallery-desc">
-            <ul class="gallery-desc-list">
-              <li class="gallery-desc-item">
+          <div class="gallary-desc">
+            <ul class="gallary-desc-list">
+              <li class="gallary-desc-item">
                 <p>Likes</p>
                 <p>${likes}</p>
               </li>
-              <li class="gallery-desc-item">
+              <li class="gallary-desc-item">
                 <p>Views</p>
                 <p>${views}</p>
               </li>
-              <li class="gallery-desc-item">
+              <li class="gallary-desc-item">
                 <p>Comments</p>
                 <p>${comments}</p>
               </li>
-              <li class="gallery-desc-item">
+              <li class="gallary-desc-item">
                 <p>Downloads</p>
                 <p>${downloads}</p>
               </li>
@@ -47,7 +45,4 @@ export function renderImages(arr) {
       `
     )
     .join('');
-    
 }
-
-
