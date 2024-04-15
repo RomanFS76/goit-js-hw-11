@@ -12,7 +12,6 @@ const gallaryEl = document.querySelector('.gallary');
 const loaderEl = document.querySelector('span');
 const lightbox = new SimpleLightbox('.gallery a', {
   captionsData: 'alt',
-  captionPosition: 'bottom',
   captionDelay: 250,
 });
 
